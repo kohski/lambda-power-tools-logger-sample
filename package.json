@@ -1,0 +1,15 @@
+{
+  "name": "lambda-power-tools-logger-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:kohski/lambda-power-tools-logger-sample.git",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "typescript": "^4.9.3",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "@aws-lambda-powertools/logger": "^1.4.1"
+  }
+}
