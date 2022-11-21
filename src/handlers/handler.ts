@@ -1,7 +1,5 @@
-import { Logger } from '@aws-lambda-powertools/logger';
+import { logger } from '../utils/logger';
 import { useCase } from '../use-cases/use-case';
-
-export const logger = new Logger({ serviceName: 'check-power-tools-log' });
 
 const handler = async (event: object) => {
   try {

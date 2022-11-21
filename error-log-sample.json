@@ -2,7 +2,7 @@
   "level": "ERROR",
   "message": "Fatal Error",
   "service": "check-power-tools-log",
-  "timestamp": "2022-11-20T23:09:10.666Z",
+  "timestamp": "2022-11-21T01:18:38.140Z",
   "handlerEvent": {
     "name": "test-handler-invoke"
   },
@@ -14,20 +14,20 @@
   },
   "infrastructureError": {
     "name": "Error",
-    "location": "/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/index.ts:12",
+    "location": "/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/infrastructures/infrastructures.ts:7",
     "message": "This Error from AWS SDK",
-    "stack": "Error: This Error from AWS SDK\n    at infrastructure (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/index.ts:12:11)\n    at useCase (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/index.ts:23:11)\n    at handler (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/index.ts:33:11)\n    at Object.<anonymous> (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/index.ts:41:1)\n    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n    at Module.m._compile (/Users/kimura.kosuke/.anyenv/envs/nodenv/versions/16.14.0/lib/node_modules/ts-node/src/index.ts:1475:23)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1155:10)\n    at Object.require.extensions.<computed> [as .ts] (/Users/kimura.kosuke/.anyenv/envs/nodenv/versions/16.14.0/lib/node_modules/ts-node/src/index.ts:1478:12)\n    at Module.load (node:internal/modules/cjs/loader:981:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:822:12)"
+    "stack": "Error: This Error from AWS SDK\n    at infrastructure (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/infrastructures/infrastructures.ts:7:11)\n    at useCase (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/use-cases/use-case.ts:11:25)\n    at handler (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/handlers/handler.ts:7:18)\n    at Object.<anonymous> (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/handlers/handler.ts:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n    at Module.m._compile (/Users/kimura.kosuke/.anyenv/envs/nodenv/versions/16.14.0/lib/node_modules/ts-node/src/index.ts:1475:23)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1155:10)\n    at Object.require.extensions.<computed> [as .ts] (/Users/kimura.kosuke/.anyenv/envs/nodenv/versions/16.14.0/lib/node_modules/ts-node/src/index.ts:1478:12)\n    at Module.load (node:internal/modules/cjs/loader:981:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:822:12)"
   },
   "useCaseError": {
     "name": "InfrastructureUnknownError",
     "location": "/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/errors/error.ts:13",
     "message": "",
-    "stack": "InfrastructureUnknownError\n    at new InfrastructureUnknownError (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/errors/error.ts:13:5)\n    at infrastructure (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/index.ts:16:11)\n    at useCase (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/index.ts:23:11)\n    at handler (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/index.ts:33:11)\n    at Object.<anonymous> (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/index.ts:41:1)\n    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n    at Module.m._compile (/Users/kimura.kosuke/.anyenv/envs/nodenv/versions/16.14.0/lib/node_modules/ts-node/src/index.ts:1475:23)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1155:10)\n    at Object.require.extensions.<computed> [as .ts] (/Users/kimura.kosuke/.anyenv/envs/nodenv/versions/16.14.0/lib/node_modules/ts-node/src/index.ts:1478:12)\n    at Module.load (node:internal/modules/cjs/loader:981:32)"
+    "stack": "InfrastructureUnknownError\n    at new InfrastructureUnknownError (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/errors/error.ts:13:5)\n    at infrastructure (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/infrastructures/infrastructures.ts:11:11)\n    at useCase (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/use-cases/use-case.ts:11:25)\n    at handler (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/handlers/handler.ts:7:18)\n    at Object.<anonymous> (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/handlers/handler.ts:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n    at Module.m._compile (/Users/kimura.kosuke/.anyenv/envs/nodenv/versions/16.14.0/lib/node_modules/ts-node/src/index.ts:1475:23)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1155:10)\n    at Object.require.extensions.<computed> [as .ts] (/Users/kimura.kosuke/.anyenv/envs/nodenv/versions/16.14.0/lib/node_modules/ts-node/src/index.ts:1478:12)\n    at Module.load (node:internal/modules/cjs/loader:981:32)"
   },
   "err": {
     "name": "UseCaseUnknownError",
     "location": "/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/errors/error.ts:32",
     "message": "",
-    "stack": "UseCaseUnknownError\n    at new UseCaseUnknownError (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/errors/error.ts:32:5)\n    at useCase (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/index.ts:26:11)\n    at async handler (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/index.ts:33:5)"
+    "stack": "UseCaseUnknownError\n    at new UseCaseUnknownError (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/errors/error.ts:32:5)\n    at useCase (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/use-cases/use-case.ts:14:11)\n    at async handler (/Users/kimura.kosuke/repos/github.com/kohski/lambda-power-tools-logger-sample/src/handlers/handler.ts:7:5)"
   }
 }

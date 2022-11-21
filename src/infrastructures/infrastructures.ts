@@ -1,4 +1,4 @@
-import { logger } from '../handlers/handler';
+import { logger } from '../utils/logger';
 import { InfrastructureUnknownError } from '../errors/error';
 
 export const infrastructure = async (payload: object) => {
