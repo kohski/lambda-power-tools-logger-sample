@@ -1,31 +1,7 @@
 import { Logger } from '@aws-lambda-powertools/logger';
-import {
-  InfrastructureUnknownError,
-  UseCaseUnknownError,
-} from './errors/error';
+import { useCase } from './use-cases/use-case';
 
-const logger = new Logger({ serviceName: 'check-power-tools-log' });
-
-const infrastructure = async (payload: object) => {
-  try {
-    logger.appendKeys({ infrastructureEvent: payload });
-    throw new Error('This Error from AWS SDK');
-    // return 'OK';
-  } catch (err: unknown) {
-    logger.appendKeys({ infrastructureError: err });
-    throw new InfrastructureUnknownError(err, payload);
-  }
-};
-
-const useCase = async (payload: object) => {
-  try {
-    logger.appendKeys({ useCaseEvent: payload });
-    await infrastructure(payload);
-  } catch (err: unknown) {
-    logger.appendKeys({ useCaseError: err });
-    throw new UseCaseUnknownError(err, payload);
-  }
-};
+export const logger = new Logger({ serviceName: 'check-power-tools-log' });
 
 const handler = async (event: object) => {
   try {
