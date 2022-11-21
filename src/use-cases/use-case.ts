@@ -1,5 +1,5 @@
 // import { Logger } from '@aws-lambda-powertools/logger';
-import { logger } from '../index';
+import { logger } from '../handlers/handler';
 import { UseCaseUnknownError } from '../errors/error';
 import { infrastructure } from '../infrastructures/infrastructures';
 

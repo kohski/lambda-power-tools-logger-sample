@@ -4,7 +4,7 @@
 
 ```bash
 $ yarn install
-$ ts-node src/index.ts
+$ ts-node src/handlers/handler
 ```
 
 ## ログのサンプル
